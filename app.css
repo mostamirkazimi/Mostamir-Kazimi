@@ -1,220 +1,297 @@
 *{
     padding: 0;
     margin: 0;
-    list-style: none;
-    text-transform: none;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    list-style: none;
 }
-nav img{
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-}
-div.check{
-    display: none;
-}
-
 nav{
-    text-align: center;
-    width: 300px;
-    height: 600px;
-    box-shadow: 0 3px 30px rgb(129, 127, 226);
-    line-height: 20px;
-    margin: 30px;
+    width: 274px;
+    height: 789px;
+    position: absolute;
+    top: 17px;
+    left: 21px;
+    box-shadow: 0 3px 20px rgb(216, 208, 208);
     border-radius: 10px;
     
+}
+nav .logo{
+    width: 60px;
+    height: 70.59;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    
+
     
 }
-
-nav button{
+nav button#state {
     position: relative;
-    top: -20px;
-    right: -90px;
+    top: 5%;
+    left: 92%;
+    border-radius: 100%;
     width: 30px;
     height: 30px;
-    border-radius: 100%;
-    background: #0ddada;
-    border: 2px solid white;
+    background: #05877D;
+    border: 5px solid white;
+    box-shadow: 0 3px 2px gray;
+    
 }
-nav button svg{
-    width: 20px;
-    height: 20px;
+nav button#setMobile{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-top:30px ;
+    margin-right: 10px;
+    display:block;
+    
+}
+nav div.check{
+   display: none;
+}
+
+nav button img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  
+    
+    
+   
+    
+}
+ .title h3{
+   position: relative;
+   width: 107px;
+   height: 28px;
+   position: absolute;
+   top: 92px;
+   left: 100px;
+    
 
 }
+
 nav ul li{
     display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
-    
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 130px;
+    padding-left: 20px;
+
     
 }
-ul li a:hover{
-    background: gray;
-    color: white;
-    padding: 5px;
-    width: 100px;
+ul li svg{
+    width: 24px;
+    height: 24px;
+}
+ul li input{
+    width: 80%;
+    height: 36px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
 ul li a{
-    padding-left: 10px;
-    color: black;
-    font-size: 20px;
-}
-nav ul li svg{
-    width: 30px;
-    height: 30px;
+    
+    margin: 20px 10px;
+    text-align: center;
 
 }
 ul li:first-child{
-    border-right: 3px solid rgb(72, 72, 179);
+    border-right: 5px solid #05877D;
 }
-ul li input{
-    margin-left: 10px;
-    padding-left: 10px;
-    width: 230px;
-    border-radius: 10px;
+ul li a:hover{
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    font-size: 14px;
+    border-bottom: 3px solid black;
+}
 
-}
-div button#btn{
-    background: rgb(206, 205, 205)
-}
-div.profile img{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 10px;
-}
-div.profile{
+ div.profile{
     display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-top: 100px;
-    
-}
-/* //////////// section div */
- section{
-    width: 50%;
-     margin-top: 100px;
     position: absolute;
-    top: 100px;
-    right: 100px;
-    text-align: center;
-    padding: 30px;
-    line-height: 30px;
-
+    left: 29px;
+    top: 724px;
     
-    
+ }
+ div.profile h3{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 20px;
 
-   
  }
 
+
+ section{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 486px;
+    height: 367px;
+    box-shadow: 0 3px 20px rgb(216, 208, 208);
+    line-height: 30px;
+ }
  section h3{
-    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+ }
+ section p{
+    padding: 10px;
+    margin-bottom: 50px;
     font-weight: bold;
  }
-
- section p{
-    text-align: justify;
-    padding: 30px;
-    margin-bottom: 50px;
- }
- section select{
+ section select,section button{
+    width: 80%;
+    height: 10%;
     padding: 10px;
-    width: 90%;
+    margin-left: 10%;
     margin-bottom: 20px;
-    border-radius: 5px;
-    border-right: 3px solid rgb(41, 82, 41);
+    
  }
- 
- 
  section button{
-    width: 90%;
-    padding: 10px;
-    background: rgb(16, 170, 218);
+    background: #05877D;
     color: white;
  }
- 
+   
+ footer{
+    display: none;
+ }
 
- 
-
-@media (max-width:760px){
-   nav{
-    width: 100%;
-    height: 80px;
-    padding: 0;
-    margin: 0;
-    float: right;
-    
-   }
-   div.check button#btn{
-    display: block;
+ @media (max-width:780px){
+    nav{
+     width: 430px;
+     height: 100px;
+     padding: 0;
+     margin: 0;
+     position: absolute;
+     top: 0;
+     left: 0;
+     
+     
+    }
+     nav div.check{
+      display: block;
+     }
+    button#setMobile {  
+    display:block;
     position: absolute;
     top: 20px;
     right: 10px;
-
+    display: block;
+    }
     
-   }
-   ul{
-    display: inline;
-    float: right;
-    display: block;
-    margin-top: 70px;
-    width: 200px;
-    display: none;
-   }
-   nav ul li:first-child{
-    border: none;
-    display: none;
-   }
-   nav ul li{
-    padding: 5px;
-     cursor: pointer;
-     
-     
+    
+    
 
+    div#logo{
+        position: relative;
+        top: 20px;
+        left: 24px;
+        width: 35px;
+        height: 41.1px;
+    }
+    nav div.title{
+      display: none;
+    }
+   
+     ul{
+     
+     float: right;
+     margin-top: -70px;
+     width: 200px;
+    
+     
+    }
+    nav ul li:first-child{
+     border: none;
+     display: none;
+    }
+    nav ul li{
+     padding: 5px;
+      cursor: pointer;
+      width: 150px;
+      margin-left: 20px;
+      display: block;
+      box-shadow: 0 3px 4px gray;
+      border-radius: 3px;
       
+      
+ 
+       
+ 
+    }
+    nav ul li svg{
+     display: none;
+    }
+   
+    nav button,nav h3 {
+     display: none;
+    }
+    div.profile{
+     display: none;
+    }
+     nav img{
+     float: left;
+     width: 50px;
+     height: 50px;
+    } 
+    
+ /* /////////// Section responsive */
+ section{
+ width: 100%;
+ margin-top: 100px;
+ margin-left: -210px;
+ height: 200px;
+ box-shadow: none;
 
-   }
-   nav ul li svg{
+ 
+ 
+ 
+ 
+ }
+ section h3,section p{
     display: none;
-   }
-  
-   nav button,nav h3 {
-    display: none;
-   }
-   div.profile{
-    display: none;
-   }
-   nav img{
-    float: left;
-    width: 50px;
-    height: 50px;
-   }
-   div.check{
-    float: right;
-    margin-top: 20px;
-    display: block;
-   }
-/* /////////// Section responsive */
-section{
-width: 100%;
-margin: 0 auto;
-position: relative;
-margin: 0 auto;
-top: 240px;
-right: 0;
+ }
+ section select{
+  height: 40px;
 
-padding: 0;
+ }
+ section .btn{
+    height: 40px;
+ }
 
+ footer{
+     width: 430px;
+     height: 70px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background: #DAE8EA;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 
-}
-section h3,section p{
-display: none;
-}
-section select{
-width: 100%;
-}
-section button{
-width: 100%;
-}
-}
+     
+ }
+ footer a{
+   width: 24%;
+   height: 70;
+   padding: 10px;
+ }
+ footer a svg{
+   width: 32px;
+   height: 32px;
+   margin-left: 4px;
+   
+ }
+ footer a.search,footer a.search svg{
+   color: #05877D;
+ }
+ 
+ 
+ }
