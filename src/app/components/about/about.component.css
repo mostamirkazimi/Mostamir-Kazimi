@@ -1,0 +1,10 @@
+@media (max-width:760px) {
+    div.aboutWrapper{
+        width: 400px;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
+

@@ -1,0 +1,24 @@
+@media (max-width : 760px){
+  .computerWrapper{
+    width: 490px;
+   margin: auto;
+  }
+  div.common{
+    display: block;
+  }
+
+div.table{
+  width: 100%;
+  min-height: 200px;
+  
+  
+}
+div.form{
+  width: 400px;
+  margin: auto;
+ 
+}
+
+
+
+}

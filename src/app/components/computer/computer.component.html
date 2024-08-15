@@ -1,0 +1,177 @@
+<app-navbar></app-navbar>
+
+ <div class="computerWrapper w-[1024px] m-auto h-[100vh] mt-20 ">
+
+    <div class="common grid grid-cols-12 gap-2">
+        <!-- ForList -->
+
+
+        <div class="table col-start-1 col-end-8 ">
+            <mat-card  appearance="outlined">
+
+                <mat-card-header class="bg-blue-600">
+                    <div class="grid grid-cols-12">
+                        <div class="col-start-1 col-end-12 text-white">
+                            <h6 class="p-2">Computer List</h6>
+                        </div>
+
+
+                       
+                    </div>
+                  
+                </mat-card-header>
+
+
+
+
+                <mat-card-content>
+                
+                </mat-card-content>
+                 
+                <table class="w-full h-full border-2">
+               <thead>
+                <tr class="bg-gray-500 text-gray-900">
+                    <th>Number</th>
+                    <th>  Name </th>
+                    <th> RAM</th>
+                    <th> ROM</th>
+                    <th>  Grafig</th>
+                    <th>  Quantity</th>
+                    <th>  Price</th>
+                    <th>Edit</th>
+                    <th> Delete</th>
+                </tr>
+               </thead>
+              <tbody>
+                @for (list of Lists; track list.id) {
+
+                    <tr class="text-center m-2 border-2">
+                        <td>{{list.id}}</td>
+                        <td>{{list.name}}</td>
+                        <td>{{list.ram}}</td>
+                        <td>{{list.rom}}</td>
+                        <td>{{list.grafig}}</td>
+                        <td>{{list.quantity}}</td>
+                        <td>{{list.price}}</td>
+                        
+                        <td>
+                            <button class="bg-blue-800" (click)=" updateComputer(list)">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                  </svg>
+                            </button>
+                              
+                        </td>
+                        <td>
+                          <button class="bg-red-500" (click)="deleteComputer(list.id);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                              </svg>
+                              
+                          </button>
+                        </td>
+                    </tr>
+                   }
+              </tbody>
+                </table>
+                
+              </mat-card>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Form Add -->
+        <div class="form col-start-8 col-end-12 bg-blue-600 h-10 ">
+
+            <mat-card appearance="outlined">
+                <mat-card-header class="bg-blue-700">
+  
+                    <div class="grid grid-cols-12 p-2">
+                        <div class="col-start-1 col-end-12  text-white">
+                            <h6 >{{computerMode? 'Update Computer':'Add Computer'}}</h6>
+                        </div>
+
+
+                       
+                    </div>
+
+                </mat-card-header>
+
+
+
+                <mat-card-content>
+                    <form action="" formGroup="computerForm">
+                        <select title="please typep your Computer Model" [(ngModel)] = "computer.name" name="computer_name" id="computer_name" class="w-full p-2 mt-2 text-black">
+                            <optgroup label="Computer Model" class="text-black">
+                              
+                                @for (computer of computerList; track $index) {
+                                    <option value="{{computer}}">{{computer}}</option>
+                                }
+                                
+                            </optgroup>
+                            
+                          </select>
+
+                          <select title="please type your computer RAM" [(ngModel)] = "computer.ram"  name="computer_ram" id="computer_ram" class="text-black w-full p-2 mt-2">
+                            <optgroup label="Computer RAM" class="text-black">
+                             @for (ram of computerRam; track $index) {
+                                <option value="{{ram}}">{{ram}}</option>
+                             }
+                                
+                            </optgroup>
+                            
+                          </select>
+
+                          <select title="please type your computer ROM !" [(ngModel)] = "computer.rom"  name="computer_rom" id="computer_rom" class="text-black w-full p-2 mt-2 ">
+                          
+                            <optgroup label="Computer ROM" class="text-black">
+
+                                @for (rom of computerStorage; track $index) {
+                                    <option value="{{rom}}">{{rom}}</option>
+                                }
+                                </optgroup>
+                          </select>
+
+                          <input type="text"  title="please type your computer Grafig !"   [(ngModel)] = "computer.grafig" name="grafig" id="grafig" required class="text-black w-full mt-2 p-2" placeholder="Grafig...">
+
+                          <div class="text-red-600">
+                            @if (computerForm.controls['grafig'].touched && computerForm.controls['grafig'].errors?.['required']) {
+                             <span>this failed is required !</span>
+
+                            }
+                          </div>
+
+
+                          <input type="number" title="please type your computer quantity !" [(ngModel)] = "computer.quantity" name="quantity" id="quantity" required class="text-black w-full mt-2 p-2" placeholder="Quantity...">
+                                <div class="text-red-600">
+                                    @if (computerForm.controls['grafig'].touched && computerForm.controls['quantity'].errors?.['required']) {
+                                        <span>this failed is required !</span>
+                                    }
+                                   
+                                </div>
+
+                          <input type="number" title="please type your computer price !" [(ngModel)] = "computer.price" name="price" id="price" required class="text-black w-full mt-2 p-2" placeholder="Price...">
+                            <div class="text-red-600">
+                                @if (computerForm.controls['price'].touched && computerForm.controls['price'].errors?.['required']) {
+                                    <span>this failed is required !</span>
+                                }
+                            </div>
+                          
+                          <div class="flex gap-2">
+                            <input type="submit" value="{{computerMode?'Update':'Save'}}" (click)="addComputer()" class="w-full p-2 mt-2 bg-green-600">
+                            <input type="submit" value="Reset" (click)="reset()" class="w-full p-2 mt-2 bg-gray-500">
+                          </div>
+                          
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+ </div>
+
+<app-footer class="footer"></app-footer>

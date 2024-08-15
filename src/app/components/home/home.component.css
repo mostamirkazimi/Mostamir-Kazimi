@@ -1,0 +1,44 @@
+.img1{
+    background-image: url('../../../../asset/images/images\ \(1\).jpg');
+}
+.img2{
+    background-image: url('../../../../asset/images/images.jpg');
+}
+.img3{
+    background-image: url('../../../../asset/images/images\ \(2\).jpg');
+}
+p{
+    line-height: 30px;
+
+}
+
+@media (max-width:760px){
+
+    .title{
+        text-align: center;
+        width: 400px;
+    }
+    h2{
+        text-align: center;
+        font-size: 18px;
+    }
+   div.homeWrapper{
+    display: block;
+    width: 400px;
+     
+     
+    
+
+   }
+   div.content{
+    
+    margin: auto;
+    margin-top: 40px;
+   }
+   
+  .footer{
+    position: relative;
+    bottom:-1300px;
+     left: 0;
+  }
+}

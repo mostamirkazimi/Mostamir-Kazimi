@@ -1,0 +1,102 @@
+{
+  "mobile": [
+    {
+      "id": "c7ee",
+      "mobile_name": "IPhon 12",
+      "model": "IPhon",
+      "ram": "8GB",
+      "rom": "256GB",
+      "bettray": 5000,
+      "front_cammera": "",
+      "back_cammera": "",
+      "quantity": 5,
+      "price": 30000
+    },
+    {
+      "id": "4f57",
+      "mobile_name": "IPhon 12",
+      "model": "IPhon",
+      "ram": "8GB",
+      "rom": "256GB",
+      "bettray": 3000,
+      "front_cammera": "16MGPS",
+      "back_cammera": "8mbs",
+      "quantity": 10,
+      "price": 20000
+    },
+    {
+      "id": "bd04",
+      "mobile_name": "",
+      "model": "",
+      "quantity": 0,
+      "price": 0
+    },
+    {
+      "mobile_id": "c7ee",
+      "mobile_name": "IPhon 12",
+      "model": "IPhon",
+      "ram": "8GB",
+      "rom": "256GB",
+      "bettray": 5000,
+      "front_cammera": "",
+      "back_cammera": "",
+      "quantity": 5,
+      "price": 30000,
+      "id": "3b0c"
+    },
+    {
+      "id": "4f57",
+      "mobile_name": "IPhon 12",
+      "model": "IPhon",
+      "ram": "8GB",
+      "rom": "256GB",
+      "bettray": 3000,
+      "front_cammera": "16MGPS",
+      "back_cammera": "8mbs",
+      "quantity": 19,
+      "price": 20000
+    }
+  ],
+  "computer": [
+    {
+      "id": "a216",
+      "computer_id": 1,
+      "computer_name": "DEL",
+      "ram": "4GB",
+      "rom": "512GB",
+      "grafig": "2GB",
+      "quantity": 10,
+      "price": 10000
+    },
+    {
+      "id": "3b5f",
+      "computer_id": 1,
+      "computer_name": "HP",
+      "ram": "8GB",
+      "rom": "256GB",
+      "grafig": "4GB",
+      "quantity": 5,
+      "price": 12000
+    },
+    {
+      "id": "a216",
+      "computer_id": 2,
+      "computer_name": "DEL",
+      "ram": "4GB",
+      "rom": "512GB",
+      "grafig": "2GB",
+      "quantity": 10,
+      "price": 10000
+    },
+    {
+      "id": "a216",
+      "computer_id": 3,
+      "computer_name": "DEL",
+      "ram": "4GB",
+      "rom": "512GB",
+      "grafig": "2GB",
+      "quantity": 10,
+      "price": 10000
+    }
+  ]
+}
